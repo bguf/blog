@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: head(~{::title})">
+    <title>标签</title>
+</head>
+<body>
+    <!--导航-->
+    <nav th:replace="_fragments :: menu(3)"></nav>
+
+    <!--中间内容-->
+    <div class="mycontainer">
+        <div class="ui container" style="padding-bottom: 341px; padding-top: 64px;">
+            <!--头部-->
+            <div class="ui top attached segment">
+                <div class="ui two column middle aligned grid">
+                    <div class="column">
+                        <h3 class="ui teal header">标签</h3>
+                    </div>
+                    <div class="right aligned column">
+                        共 <h2 class="ui orange header inline-block text-thin" th:text="${#arrays.length(tags)}"> </h2> 个
+                    </div>
+                </div>
+            </div>
+            <!--标签-->
+            <div class="ui attached segment padded-large">
+                <div class="ui labeled margin-tiny button"  th:each="tag : ${tags}">
+                    <a th:href="@{/tags/{id}(id=${tag.id})}" class="ui basic button" th:classappend="${tag.id == activeTagid} ? 'teal'" th:text="${tag.name}"></a>
+                    <div class="ui left pointing basic label" th:classappend="${tag.id == activeTagid} ? 'teal'"  th:text="${#arrays.length(tag.blogs)}"></div>
+                </div>
+            </div>
+            <div th:if="${page.content.size() > 0}">
+                <!--列表-->
+                <div class="ui top attached teal segment">
+                    <div class="ui padded vertical segment padded-lr-small-responsive" th:each="blog : ${page.content}">
+                        <div class="ui mini aligned stackable mobile reversed grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header"><a th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="color-black" th:text="${blog.title}"></a></h3>
+                                <p class="text-thin text-spaced text-lined" th:text="${blog.descriptor}"></p>
+                                <div class="ui stackable grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img th:src="@{${blog.manager.avatar}}" alt="" class="ui avatar image">
+                                                <div class="content"><a href="#" class="header" th:text="${blog.manager.nickname}"></a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i><span th:text="${#dates.format(blog.updateTime, 'yyyy-MM-dd')}"></span>
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> <span th:text="${blog.views}"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="javascript:;" class="ui basic teal label padded-all-small text-thin" th:text="${blog.type.name}"></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column margin-top-large">
+                                        <a href="javascript:;" th:classappend="${tag.id == activeTagid} ? 'teal'"  th:each="tag : ${blog.tags}" class="ui left pointing basic label padded-all-mini text-thin" th:text="${tag.name}"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a target="_blank" th:href="@{/blog/{id}(id=${blog.id})}">
+                                    <img th:src="@{${blog.firstPicture}}" class="ui rounded image" style="width: 120px;height: 120px"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--分页-->
+                <div class="ui attached bottom segment">
+                    <div class="ui four column middle aligned grid" th:if="${page.totalPages > 1}">
+                        <div class="column">
+                            <a th:href="@{/tags/{id}(id=${activeTagid})}+@{?page={page}(page=${page.number - 1})}" th:unless="${page.first}" class="mini item">上一页</a>
+                        </div>
+                        <div class="column">
+                            <label class="mini item" style="color: grey">当前第 [[${page.getNumber()} + 1]] 页</label>
+                        </div>
+                        <div class="column">
+                            <label class="mini item" style="color: grey">共 [[${page.totalPages}]] 页</label>
+                        </div>
+                        <div class="right aligned column">
+                            <a th:href="@{/tags/{id}(id=${activeTagid})}+@{?page={page}(page=${page.number + 1})}" th:unless="${page.last}" class="mini item">下一页</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <!--底部footer-->
+    <footer th:replace="_fragments :: footer"></footer>
+
+    <th:block th:replace="_fragments :: script"></th:block>
+</body>
+</html>

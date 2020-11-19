@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css}">
+    <link rel="stylesheet" th:href="@{/css/public.css}">
+
+    <title th:replace="${title}"></title>
+</head>
+<body>
+    <!--导航-->
+    <nav th:fragment="menu(n)" class="ui inverted attached segment padded-mini shadow-mini">
+        <div class="ui center container">
+            <div class="ui inverted secondary menu stackable">
+                <h2 class="ui teal header item">Blog</h2>
+                <a th:href="@{/}" class="nav-item item mobile-hidden" th:classappend="${n==1}?'active'"><i class="home icon"></i><span th:text="#{nav.index}"></span></a>
+                <a th:href="@{/types/-1}" class="nav-item item mobile-hidden" th:classappend="${n==2}?'active'"><i class="idea icon"></i><span th:text="#{nav.type}"></span></a>
+                <a th:href="@{/tags/-1}" class="nav-item item mobile-hidden" th:classappend="${n==3}?'active'"><i class="tags icon"></i><span th:text="#{nav.tag}"></span></a>
+                <a th:href="@{/archives}" class="nav-item item mobile-hidden" th:classappend="${n==4}?'active'"><i class="clone icon"></i><span th:text="#{nav.archive}"></span></a>
+                <a th:href="@{/about}" class="nav-item item mobile-hidden" th:classappend="${n==5}?'active'"><i class="info icon"></i><span th:text="#{nav.about}"></span></a>
+
+                <div class="right nav-item item mobile-hidden">
+                    <form th:action="@{/search}" target="_blank" name="search" method="post">
+                        <div class="ui inverted center icon transparent input myinput text-thin">
+                            <input type="text" placeholder="search" name="query" th:value="${query}">
+                            <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                        </div>
+                    </form>
+                </div>
+                <a id="showbar" class="ui icon black button right-top mobile-show">
+                    <i class="sidebar icon"></i>
+                </a>
+                <div class="right menu" th:if="${session.user!=null || session.manager != null}">
+                    <div class="ui dropdown nav-item mobile-hidden item">
+                        <div class="text" th:if="${session.user != null}">
+                            <img th:src="@{${session.user.avatar}}" alt="" class="ui avatar image">
+                            <span th:text="${session.user.nickname}"></span>
+                        </div>
+                        <div class="text" th:if="${session.manager != null}">
+                            <img th:src="@{${session.manager.avatar}}" alt="" class="ui avatar image">
+                            <span th:text="${session.manager.nickname}"></span>
+                        </div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a th:href="@{/logout}" class="item">注销</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--底部footer-->
+    <footer th:fragment="footer" class="ui inverted vertical segment padded-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="four wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img th:src="@{/images/wechat.jpg}" class="ui rounded image" style="width: 120px">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="four wide column" th:fragment="newblogslist" id="footerblog">
+                    <h4 class="ui inverted header text-thin text-spaced">最新博客</h4>
+                    <div class="ui inverted link list" th:each="blog : ${newBlogs}">
+                        <a target="_blank" th:href="@{/blog/{id}(id=${blog.id})}" class="item" th:text="${blog.title}"></a>
+                    </div>
+                </div>
+
+                <div class="four wide column">
+                    <h4 class="ui inverted header text-thin text-spaced">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="javascript:;" class="item" th:text="#{email}"></a>
+                        <a href="javascript:;" class="item" th:text="#{qq}"></a>
+                        <a href="javascript:;" class="item" th:text="#{tel}"></a>
+                        <a href="http://beian.miit.gov.cn/" th:text="#{footer.ICP}"></a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header opacity-mini">Blog</h4>
+                    <p class="text-thin text-spaced opacity-mini" th:text="#{motto}"></p>
+                </div>
+            </div>
+            <div class="ui inverted section divider">
+            </div>
+            <p class="text-thin text-spaced opacity-tiny">copy@right bguf</p>
+        </div>
+    </footer>
+
+    <!--js-->
+    <th:block th:fragment="script">
+        <script th:src="@{/js/jquery.js}"></script>
+        <script th:src="@{/js/semantic-ui.js}"></script>
+        <script th:src="@{/js/public.js}"></script>
+        <script th:inline="javascript">
+            $('#footerblog').load([[@{/footer/newblog}]]);
+        </script>
+    </th:block>
+</body>
+</html>

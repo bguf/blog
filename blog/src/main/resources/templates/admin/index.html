@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <title>博客后台</title>
+</head>
+<body>
+    <div class="bg">
+        <!--导航-->
+        <nav th:replace="admin/_fragments :: nav(0)"></nav>
+
+        <!--中间内容-->
+        <div class="mycontainer" style="padding-top: 4em; padding-bottom: 9em;">
+            <div class="ui container">
+                <div class="ui success large message">
+                    <h2>hi, </h2>
+                    <span th:text="${session.manager.managername}"></span>，欢迎登录!
+                </div>
+
+                <img src="http://unsplash.it/1000/600?image=1005" alt="" class="ui rounded bordered fluid image">
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <!--底部footer-->
+        <footer th:replace="admin/_fragments :: footer"></footer>
+    </div>
+
+    <th:block th:replace="admin/_fragments :: script"></th:block>
+    <script th:src="@{/js/adminBlogs.js}"></script>
+
+</body>
+</html>

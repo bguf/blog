@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <title>评论</title>
+</head>
+<body>
+    <div class="bg">
+        <!--导航-->
+        <nav th:replace="admin/_fragments :: nav(4)"></nav>
+
+        <!--中间内容-->
+        <div class="mycontainer" style="padding-top: 4em; padding-bottom: 21em;">
+            <div class="ui container">
+                <div class="ui negative message" th:if="${flag}=='fail'">
+                    <i class="close icon"></i>
+                    <div class="header">提示：</div>
+                    <p th:text="${msgf}"></p>
+                </div>
+
+                <div class="ui success message" th:if="${flag}=='success'">
+                    <i class="close icon"></i>
+                    <div class="header">提示：</div>
+                    <p th:text="${msgs}"></p>
+                </div>
+
+                <table class="ui compact teal table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>用户昵称</th>
+                            <th>评论内容</th>
+                            <th>创建时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="comment,iterStat : ${page.content}">
+                            <td th:text="${iterStat.count}"></td>
+                            <td th:text="${comment.nickname}"></td>
+                            <td th:text="${comment.content}"></td>
+                            <td th:text="${comment.createTime}"></td>
+                            <td>
+                                <a th:href="@{/admin/comments/{id}/delete(id=${comment.id})}" class="ui red basic button">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="5">
+                                <div class="ui pagination menu" th:if="${page.totalPages > 1}">
+                                    <a th:href="@{/admin/comments(page=${page.number} - 1)}" th:unless="${page.first}" class="mini item">上一页</a>
+                                    <label class="mini item" style="color: grey">当前第 [[${page.getNumber()} + 1]] 页</label>
+                                    <label class="mini item" style="color: grey">共 [[${page.totalPages}]] 页</label>
+                                    <a th:href="@{/admin/comments(page=${page.number} + 1)}" th:unless="${page.last}" class="mini item">下一页</a>
+                                </div>
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <!--底部footer-->
+        <footer th:replace="admin/_fragments :: footer"></footer>
+    </div>
+
+    <th:block th:replace="admin/_fragments :: script"></th:block>
+    <script th:src="@{/js/admintypes-tags.js}"></script>
+
+</body>
+</html>

@@ -1,0 +1,401 @@
+2020-10-14 13:43:12.739  INFO 3847 --- [restartedMain] com.bguf.BlogApplication                 : Starting BlogApplication on bgufs-MacBook-Pro.local with PID 3847 (/Volumes/winFile/codeenvironment/blog/blog/target/classes started by bguf in /Volumes/winFile/codeenvironment/blog/blog)
+2020-10-14 13:43:12.740 DEBUG 3847 --- [restartedMain] com.bguf.BlogApplication                 : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-14 13:43:12.740  INFO 3847 --- [restartedMain] com.bguf.BlogApplication                 : The following profiles are active: prod
+2020-10-14 13:43:14.620  INFO 3847 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-14 13:43:14.718  INFO 3847 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96ms. Found 6 JPA repository interfaces.
+2020-10-14 13:43:15.311  INFO 3847 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-14 13:43:15.312  INFO 3847 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-14 13:43:15.313  INFO 3847 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-14 13:43:15.341  INFO 3847 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-14 13:43:15.341  INFO 3847 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2597 ms
+2020-10-14 13:43:15.680  INFO 3847 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 13:43:15.736  INFO 3847 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-14 13:43:15.754  INFO 3847 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-10-14 13:43:16.308  INFO 3847 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-10-14 13:43:16.309  INFO 3847 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-14 13:43:16.759  INFO 3847 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-14 13:43:16.760  INFO 3847 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 13:43:17.419  WARN 3847 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-14 13:43:18.065  INFO 3847 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-14 13:43:18.084  INFO 3847 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-10-14 13:43:18.085  INFO 3847 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-14 13:43:18.969  INFO 3847 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-14 13:43:18.975  INFO 3847 --- [restartedMain] com.bguf.BlogApplication                 : Started BlogApplication in 6.747 seconds (JVM running for 556.415)
+2020-10-14 13:43:18.979  INFO 3847 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-14 13:58:37.220  INFO 3847 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 13:58:37.221  INFO 3847 --- [Thread-24] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 13:58:37.221  INFO 3847 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-10-14 13:58:37.229  INFO 3847 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-10-14 13:58:37.706  INFO 3847 --- [restartedMain] com.bguf.BlogApplication                 : Starting BlogApplication on bgufs-MacBook-Pro.local with PID 3847 (/Volumes/winFile/codeenvironment/blog/blog/target/classes started by bguf in /Volumes/winFile/codeenvironment/blog/blog)
+2020-10-14 13:58:37.706 DEBUG 3847 --- [restartedMain] com.bguf.BlogApplication                 : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-14 13:58:37.706  INFO 3847 --- [restartedMain] com.bguf.BlogApplication                 : The following profiles are active: prod
+2020-10-14 13:58:38.196  INFO 3847 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-14 13:58:38.223  INFO 3847 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 6 JPA repository interfaces.
+2020-10-14 13:58:38.415  INFO 3847 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-14 13:58:38.415  INFO 3847 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-14 13:58:38.416  INFO 3847 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-14 13:58:38.428  INFO 3847 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-14 13:58:38.428  INFO 3847 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 720 ms
+2020-10-14 13:58:38.509  INFO 3847 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 13:58:38.523  INFO 3847 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-14 13:58:38.530  INFO 3847 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-10-14 13:58:38.990  WARN 3847 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-14 13:58:39.340  INFO 3847 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-14 13:58:39.356  INFO 3847 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-10-14 13:58:39.356  INFO 3847 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-14 13:58:39.400  INFO 3847 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-10-14 13:58:39.401  INFO 3847 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-10-14 13:58:39.492  INFO 3847 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-14 13:58:39.493  INFO 3847 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 13:58:39.856  INFO 3847 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-14 13:58:39.859  INFO 3847 --- [restartedMain] com.bguf.BlogApplication                 : Started BlogApplication in 2.377 seconds (JVM running for 1477.285)
+2020-10-14 13:58:39.860  INFO 3847 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-14 13:59:25.404  INFO 3847 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 13:59:25.404  INFO 3847 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 13:59:25.405  INFO 3847 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-10-14 13:59:25.430  INFO 3847 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2020-10-14 14:00:12.420  INFO 4069 --- [main] com.bguf.BlogApplicationTests            : Starting BlogApplicationTests on bgufs-MacBook-Pro.local with PID 4069 (started by bguf in /Volumes/winFile/codeenvironment/blog/blog)
+2020-10-14 14:00:12.422 DEBUG 4069 --- [main] com.bguf.BlogApplicationTests            : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-14 14:00:12.422  INFO 4069 --- [main] com.bguf.BlogApplicationTests            : The following profiles are active: prod
+2020-10-14 14:00:14.413  INFO 4069 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-14 14:00:14.663  INFO 4069 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 236ms. Found 6 JPA repository interfaces.
+2020-10-14 14:00:17.521  INFO 4069 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 14:00:17.705  INFO 4069 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-14 14:00:17.816  INFO 4069 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-14 14:00:18.046  INFO 4069 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-14 14:00:18.439  INFO 4069 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-14 14:00:21.215  WARN 4069 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-14 14:00:21.252  INFO 4069 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-14 14:00:21.316  INFO 4069 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-14 14:00:22.841  INFO 4069 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-14 14:00:23.469  INFO 4069 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-14 14:00:23.482  INFO 4069 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 14:00:24.854  INFO 4069 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-14 14:00:24.873  INFO 4069 --- [main] com.bguf.BlogApplicationTests            : Started BlogApplicationTests in 13.667 seconds (JVM running for 16.772)
+2020-10-14 14:00:25.447  INFO 4069 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 14:00:25.450  INFO 4069 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 14:00:25.451  INFO 4069 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-14 14:00:25.763  INFO 4069 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-14 14:05:28.592  INFO 4156 --- [main] com.bguf.BlogApplicationTests            : Starting BlogApplicationTests on bgufs-MacBook-Pro.local with PID 4156 (started by bguf in /Volumes/winFile/codeenvironment/blog/blog)
+2020-10-14 14:05:28.594 DEBUG 4156 --- [main] com.bguf.BlogApplicationTests            : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-14 14:05:28.596  INFO 4156 --- [main] com.bguf.BlogApplicationTests            : The following profiles are active: prod
+2020-10-14 14:05:30.894  INFO 4156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-14 14:05:31.224  INFO 4156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 315ms. Found 6 JPA repository interfaces.
+2020-10-14 14:05:33.274  INFO 4156 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 14:05:33.459  INFO 4156 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-14 14:05:33.574  INFO 4156 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-14 14:05:34.029  INFO 4156 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-14 14:05:34.420  INFO 4156 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-14 14:05:35.819  WARN 4156 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-14 14:05:35.941  INFO 4156 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-14 14:05:36.037  INFO 4156 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-14 14:05:37.011  INFO 4156 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-14 14:05:37.993  INFO 4156 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-14 14:05:38.007  INFO 4156 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 14:05:39.422  INFO 4156 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-14 14:05:39.442  INFO 4156 --- [main] com.bguf.BlogApplicationTests            : Started BlogApplicationTests in 12.217 seconds (JVM running for 15.239)
+2020-10-14 14:05:39.915  INFO 4156 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 14:05:39.918  INFO 4156 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 14:05:39.919  INFO 4156 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-14 14:05:40.339  INFO 4156 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-14 18:02:15.209  INFO 6335 --- [restartedMain] com.bguf.BlogApplication                 : Starting BlogApplication on bgufs-MacBook-Pro.local with PID 6335 (/Volumes/winFile/codeenvironment/blog/blog/target/classes started by bguf in /Volumes/winFile/codeenvironment/blog/blog)
+2020-10-14 18:02:15.220 DEBUG 6335 --- [restartedMain] com.bguf.BlogApplication                 : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-14 18:02:15.221  INFO 6335 --- [restartedMain] com.bguf.BlogApplication                 : The following profiles are active: prod
+2020-10-14 18:02:15.321  INFO 6335 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-14 18:02:15.321  INFO 6335 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-14 18:02:16.578  INFO 6335 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-14 18:02:16.689  INFO 6335 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103ms. Found 6 JPA repository interfaces.
+2020-10-14 18:02:17.709  INFO 6335 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-14 18:02:17.720  INFO 6335 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-14 18:02:17.721  INFO 6335 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-14 18:02:17.824  INFO 6335 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-14 18:02:17.824  INFO 6335 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2502 ms
+2020-10-14 18:02:18.158  INFO 6335 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 18:02:18.217  INFO 6335 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-14 18:02:18.262  INFO 6335 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-14 18:02:18.428  INFO 6335 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-14 18:02:18.575  INFO 6335 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-14 18:02:19.080  WARN 6335 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-14 18:02:19.633  INFO 6335 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-14 18:02:19.695  INFO 6335 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-14 18:02:19.724  INFO 6335 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-14 18:02:19.779  INFO 6335 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-10-14 18:02:19.784  INFO 6335 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-14 18:02:20.877  INFO 6335 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-14 18:02:20.891  INFO 6335 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 18:02:22.019  INFO 6335 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-14 18:02:22.034  INFO 6335 --- [restartedMain] com.bguf.BlogApplication                 : Started BlogApplication in 7.668 seconds (JVM running for 9.141)
+2020-10-14 18:02:33.735  INFO 6335 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-14 18:02:33.736  INFO 6335 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-14 18:02:33.758  INFO 6335 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2020-10-14 18:02:33.800  INFO 6335 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,index', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2020-10-14 18:02:34.240  WARN 6335 --- [http-nio-8081-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogList.size]; use collection function syntax instead [size(t.blogList)].
+2020-10-14 18:02:35.020  WARN 6335 --- [http-nio-8081-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-14 18:02:35.884  INFO 6335 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : result:index
+2020-10-14 18:02:37.259  INFO 6335 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@4a913bc, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@4a913bc]}
+2020-10-14 18:02:37.522  INFO 6335 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:02:44.257  INFO 6335 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/types/-1', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.TypeShowController,types', args=[-1, Page request [number: 0, size 5, sort: updateTime: DESC], com.bguf.vo.BlogSearch@708d10c, {blogSearch=com.bguf.vo.BlogSearch@708d10c, org.springframework.validation.BindingResult.blogSearch=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-10-14 18:02:45.301  INFO 6335 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : result:types
+2020-10-14 18:02:45.532  INFO 6335 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@c64aeb8, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@c64aeb8]}
+2020-10-14 18:02:45.711  INFO 6335 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:02:47.255  INFO 6335 --- [http-nio-8081-exec-2] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/types/9', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.TypeShowController,types', args=[9, Page request [number: 0, size 5, sort: updateTime: DESC], com.bguf.vo.BlogSearch@6a7f5f3e, {blogSearch=com.bguf.vo.BlogSearch@6a7f5f3e, org.springframework.validation.BindingResult.blogSearch=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-10-14 18:02:48.312  INFO 6335 --- [http-nio-8081-exec-3] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/tags/-1', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.TagShowController,types', args=[-1, Page request [number: 0, size 5, sort: updateTime: DESC], com.bguf.vo.BlogSearch@468da220, {blogSearch=com.bguf.vo.BlogSearch@468da220, org.springframework.validation.BindingResult.blogSearch=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-10-14 18:02:48.462  INFO 6335 --- [http-nio-8081-exec-2] com.bguf.aspect.LogAspect                : result:types
+2020-10-14 18:02:49.262  INFO 6335 --- [http-nio-8081-exec-3] com.bguf.aspect.LogAspect                : result:tags
+2020-10-14 18:02:49.448  INFO 6335 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@17da92e2, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@17da92e2]}
+2020-10-14 18:02:49.670  INFO 6335 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:02:50.852  INFO 6335 --- [http-nio-8081-exec-4] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/tags/15', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.TagShowController,types', args=[15, Page request [number: 0, size 5, sort: updateTime: DESC], com.bguf.vo.BlogSearch@5593cbdc, {blogSearch=com.bguf.vo.BlogSearch@5593cbdc, org.springframework.validation.BindingResult.blogSearch=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-10-14 18:02:51.800  INFO 6335 --- [http-nio-8081-exec-4] com.bguf.aspect.LogAspect                : result:tags
+2020-10-14 18:02:52.004  INFO 6335 --- [http-nio-8081-exec-5] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@71715ccc, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@71715ccc]}
+2020-10-14 18:02:52.226  INFO 6335 --- [http-nio-8081-exec-5] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:02:52.769  INFO 6335 --- [http-nio-8081-exec-6] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/types/-1', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.TypeShowController,types', args=[-1, Page request [number: 0, size 5, sort: updateTime: DESC], com.bguf.vo.BlogSearch@1c5e446a, {blogSearch=com.bguf.vo.BlogSearch@1c5e446a, org.springframework.validation.BindingResult.blogSearch=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-10-14 18:02:53.885  INFO 6335 --- [http-nio-8081-exec-6] com.bguf.aspect.LogAspect                : result:types
+2020-10-14 18:02:54.098  INFO 6335 --- [http-nio-8081-exec-7] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@3bf86aa0, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@3bf86aa0]}
+2020-10-14 18:02:54.371  INFO 6335 --- [http-nio-8081-exec-7] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:02:56.014  INFO 6335 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/types/9', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.TypeShowController,types', args=[9, Page request [number: 0, size 5, sort: updateTime: DESC], com.bguf.vo.BlogSearch@c35018f, {blogSearch=com.bguf.vo.BlogSearch@c35018f, org.springframework.validation.BindingResult.blogSearch=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-10-14 18:02:57.074  INFO 6335 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : result:types
+2020-10-14 18:02:57.281  INFO 6335 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@6f8edc90, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@6f8edc90]}
+2020-10-14 18:02:57.461  INFO 6335 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:03:04.055  INFO 6335 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/about', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.AboutShowController,about', args=[]}
+2020-10-14 18:03:04.060  INFO 6335 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : result:about
+2020-10-14 18:03:04.241  INFO 6335 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@6ef442dd, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@6ef442dd]}
+2020-10-14 18:03:04.461  INFO 6335 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:04:21.869  INFO 6335 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 18:04:21.872  INFO 6335 --- [Thread-17] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 18:04:21.875  INFO 6335 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-14 18:04:21.883  INFO 6335 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-14 18:04:22.495  INFO 6335 --- [restartedMain] com.bguf.BlogApplication                 : Starting BlogApplication on bgufs-MacBook-Pro.local with PID 6335 (/Volumes/winFile/codeenvironment/blog/blog/target/classes started by bguf in /Volumes/winFile/codeenvironment/blog/blog)
+2020-10-14 18:04:22.496 DEBUG 6335 --- [restartedMain] com.bguf.BlogApplication                 : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-14 18:04:22.496  INFO 6335 --- [restartedMain] com.bguf.BlogApplication                 : The following profiles are active: prod
+2020-10-14 18:04:23.016  INFO 6335 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-14 18:04:23.094  INFO 6335 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77ms. Found 6 JPA repository interfaces.
+2020-10-14 18:04:23.684  INFO 6335 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-14 18:04:23.685  INFO 6335 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-14 18:04:23.685  INFO 6335 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-14 18:04:23.694  INFO 6335 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-14 18:04:23.695  INFO 6335 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1194 ms
+2020-10-14 18:04:23.913  INFO 6335 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 18:04:23.968  INFO 6335 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-14 18:04:23.974  INFO 6335 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-10-14 18:04:24.482  INFO 6335 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-10-14 18:04:24.483  INFO 6335 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-14 18:04:24.790  INFO 6335 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-14 18:04:24.791  INFO 6335 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 18:04:25.016  WARN 6335 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-14 18:04:25.589  INFO 6335 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-14 18:04:25.629  INFO 6335 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-10-14 18:04:25.631  INFO 6335 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-14 18:04:26.925  INFO 6335 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-14 18:04:26.931  INFO 6335 --- [restartedMain] com.bguf.BlogApplication                 : Started BlogApplication in 4.761 seconds (JVM running for 134.036)
+2020-10-14 18:04:26.934  INFO 6335 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-14 18:04:27.319  INFO 6381 --- [main] com.bguf.BlogApplicationTests            : Starting BlogApplicationTests on bgufs-MacBook-Pro.local with PID 6381 (started by bguf in /Volumes/winFile/codeenvironment/blog/blog)
+2020-10-14 18:04:27.350 DEBUG 6381 --- [main] com.bguf.BlogApplicationTests            : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-14 18:04:27.351  INFO 6381 --- [main] com.bguf.BlogApplicationTests            : The following profiles are active: prod
+2020-10-14 18:04:28.825  INFO 6381 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-14 18:04:28.998  INFO 6381 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153ms. Found 6 JPA repository interfaces.
+2020-10-14 18:04:30.605  INFO 6381 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 18:04:30.775  INFO 6381 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-14 18:04:30.888  INFO 6381 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-14 18:04:31.217  INFO 6381 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-14 18:04:31.565  INFO 6381 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-14 18:04:33.154  INFO 6381 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-14 18:04:33.215  INFO 6381 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-14 18:04:33.289  WARN 6381 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-14 18:04:34.964  INFO 6381 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-14 18:04:35.620  INFO 6381 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-14 18:04:35.639  INFO 6381 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 18:04:37.243  INFO 6381 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-14 18:04:37.259  INFO 6381 --- [main] com.bguf.BlogApplicationTests            : Started BlogApplicationTests in 10.918 seconds (JVM running for 13.334)
+2020-10-14 18:04:38.220  INFO 6381 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 18:04:38.225  INFO 6381 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 18:04:38.227  INFO 6381 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-14 18:04:38.247  INFO 6381 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-14 18:14:46.035  INFO 6335 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-14 18:14:46.402  INFO 6335 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-14 18:14:46.411  INFO 6335 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-10-14 18:14:46.413  INFO 6335 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,index', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2020-10-14 18:14:46.958  WARN 6335 --- [http-nio-8081-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogList.size]; use collection function syntax instead [size(t.blogList)].
+2020-10-14 18:14:47.664  WARN 6335 --- [http-nio-8081-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-14 18:14:48.695  INFO 6335 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : result:index
+2020-10-14 18:14:49.374  INFO 6335 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@70c444b3, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@70c444b3]}
+2020-10-14 18:14:49.817  INFO 6335 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:14:51.991  INFO 6335 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/search', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,search', args=[Page request [number: 0, size 5, sort: id: DESC], {}, s]}
+2020-10-14 18:14:52.751  INFO 6335 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : result:search
+2020-10-14 18:14:52.898  INFO 6335 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@7ae10f65, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@7ae10f65]}
+2020-10-14 18:14:53.307  INFO 6335 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:15:08.247  INFO 6335 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/search', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,search', args=[Page request [number: 0, size 5, sort: id: DESC], {}, ]}
+2020-10-14 18:15:08.774  INFO 6335 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : result:search
+2020-10-14 18:15:08.952  INFO 6335 --- [http-nio-8081-exec-2] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@3f811fec, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@3f811fec]}
+2020-10-14 18:15:09.427  INFO 6335 --- [http-nio-8081-exec-2] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:15:14.105  INFO 6335 --- [http-nio-8081-exec-3] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/search', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,search', args=[Page request [number: 0, size 5, sort: id: DESC], {}, mac]}
+2020-10-14 18:15:14.296  INFO 6335 --- [http-nio-8081-exec-3] com.bguf.aspect.LogAspect                : result:search
+2020-10-14 18:15:14.496  INFO 6335 --- [http-nio-8081-exec-4] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@34a70da2, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@34a70da2]}
+2020-10-14 18:15:14.930  INFO 6335 --- [http-nio-8081-exec-4] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:16:47.197  INFO 6335 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/search', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,search', args=[Page request [number: 0, size 5, sort: id: DESC], {}, mac]}
+2020-10-14 18:16:47.456  INFO 6335 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : result:search
+2020-10-14 18:16:47.827  INFO 6335 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@587eddb2, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@587eddb2]}
+2020-10-14 18:16:48.271  INFO 6335 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:17:34.440  INFO 6335 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/search', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,search', args=[Page request [number: 0, size 5, sort: id: DESC], {}, mac]}
+2020-10-14 18:17:34.927  INFO 6335 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : result:search
+2020-10-14 18:17:35.386  INFO 6335 --- [http-nio-8081-exec-7] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@49cb4b0b, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@49cb4b0b]}
+2020-10-14 18:17:35.992  INFO 6335 --- [http-nio-8081-exec-7] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:17:41.226  INFO 6335 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/search', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,search', args=[Page request [number: 0, size 5, sort: id: DESC], {}, s]}
+2020-10-14 18:17:41.702  INFO 6335 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : result:search
+2020-10-14 18:17:41.904  INFO 6335 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@3bd01b61, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@3bd01b61]}
+2020-10-14 18:17:42.410  INFO 6335 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:18:38.557  INFO 6335 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 18:18:38.560  INFO 6335 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 18:18:38.560  INFO 6335 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-10-14 18:18:38.572  INFO 6335 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-10-14 18:18:48.458  INFO 6537 --- [restartedMain] com.bguf.BlogApplication                 : Starting BlogApplication on bgufs-MacBook-Pro.local with PID 6537 (/Volumes/winFile/codeenvironment/blog/blog/target/classes started by bguf in /Volumes/winFile/codeenvironment/blog/blog)
+2020-10-14 18:18:48.462 DEBUG 6537 --- [restartedMain] com.bguf.BlogApplication                 : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-14 18:18:48.463  INFO 6537 --- [restartedMain] com.bguf.BlogApplication                 : The following profiles are active: prod
+2020-10-14 18:18:48.566  INFO 6537 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-14 18:18:48.566  INFO 6537 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-14 18:18:50.275  INFO 6537 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-14 18:18:50.429  INFO 6537 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141ms. Found 6 JPA repository interfaces.
+2020-10-14 18:18:51.856  INFO 6537 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-14 18:18:51.871  INFO 6537 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-14 18:18:51.871  INFO 6537 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-14 18:18:51.995  INFO 6537 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-14 18:18:51.996  INFO 6537 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3430 ms
+2020-10-14 18:18:52.374  INFO 6537 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 18:18:52.434  INFO 6537 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-14 18:18:52.477  INFO 6537 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-14 18:18:52.633  INFO 6537 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-14 18:18:52.763  INFO 6537 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-14 18:18:53.354  WARN 6537 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-14 18:18:53.920  INFO 6537 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-14 18:18:53.938  INFO 6537 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-14 18:18:53.952  INFO 6537 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-14 18:18:54.022  INFO 6537 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-10-14 18:18:54.024  INFO 6537 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-14 18:18:54.667  INFO 6537 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-14 18:18:54.674  INFO 6537 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 18:18:55.461  INFO 6537 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-14 18:18:55.470  INFO 6537 --- [restartedMain] com.bguf.BlogApplication                 : Started BlogApplication in 8.009 seconds (JVM running for 9.899)
+2020-10-14 18:19:07.062  INFO 6537 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-14 18:19:07.063  INFO 6537 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-14 18:19:07.077  INFO 6537 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-10-14 18:19:07.107  INFO 6537 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,index', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2020-10-14 18:19:07.782  WARN 6537 --- [http-nio-8081-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogList.size]; use collection function syntax instead [size(t.blogList)].
+2020-10-14 18:19:08.413  WARN 6537 --- [http-nio-8081-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-14 18:19:09.333  INFO 6537 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : result:index
+2020-10-14 18:19:10.233  INFO 6537 --- [http-nio-8081-exec-2] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@387b055c, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@387b055c]}
+2020-10-14 18:19:10.723  INFO 6537 --- [http-nio-8081-exec-2] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:19:19.390  INFO 6537 --- [http-nio-8081-exec-3] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,index', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2020-10-14 18:19:21.509  INFO 6537 --- [http-nio-8081-exec-3] com.bguf.aspect.LogAspect                : result:index
+2020-10-14 18:19:21.753  INFO 6537 --- [http-nio-8081-exec-4] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@7cbea59c, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@7cbea59c]}
+2020-10-14 18:19:22.194  INFO 6537 --- [http-nio-8081-exec-4] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:19:24.278  INFO 6537 --- [http-nio-8081-exec-5] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/search', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,search', args=[Page request [number: 0, size 5, sort: id: DESC], {}, ]}
+2020-10-14 18:19:24.746  INFO 6537 --- [http-nio-8081-exec-5] com.bguf.aspect.LogAspect                : result:search
+2020-10-14 18:19:24.943  INFO 6537 --- [http-nio-8081-exec-6] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@261940fc, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@261940fc]}
+2020-10-14 18:19:25.381  INFO 6537 --- [http-nio-8081-exec-6] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:19:30.151  INFO 6537 --- [http-nio-8081-exec-7] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/search', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,search', args=[Page request [number: 0, size 5, sort: id: DESC], {}, s]}
+2020-10-14 18:19:30.627  INFO 6537 --- [http-nio-8081-exec-7] com.bguf.aspect.LogAspect                : result:search
+2020-10-14 18:19:30.882  INFO 6537 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@2525c9f0, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@2525c9f0]}
+2020-10-14 18:19:31.324  INFO 6537 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:19:36.690  INFO 6537 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/search', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,search', args=[Page request [number: 0, size 5, sort: id: DESC], {}, ma]}
+2020-10-14 18:19:37.595  INFO 6537 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : result:search
+2020-10-14 18:19:37.747  INFO 6537 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@3cb6890b, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@3cb6890b]}
+2020-10-14 18:19:38.549  INFO 6537 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:19:40.565  INFO 6537 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/search', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,search', args=[Page request [number: 0, size 5, sort: id: DESC], {}, mac]}
+2020-10-14 18:19:40.767  INFO 6537 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : result:search
+2020-10-14 18:19:40.993  INFO 6537 --- [http-nio-8081-exec-2] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@146caf07, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@146caf07]}
+2020-10-14 18:19:41.439  INFO 6537 --- [http-nio-8081-exec-2] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 18:57:46.567  INFO 6537 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 18:57:46.570  INFO 6537 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 18:57:46.572  INFO 6537 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-14 18:57:46.579  INFO 6537 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-14 18:57:47.130  INFO 6537 --- [restartedMain] com.bguf.BlogApplication                 : Starting BlogApplication on bgufs-MacBook-Pro.local with PID 6537 (/Volumes/winFile/codeenvironment/blog/blog/target/classes started by bguf in /Volumes/winFile/codeenvironment/blog/blog)
+2020-10-14 18:57:47.130 DEBUG 6537 --- [restartedMain] com.bguf.BlogApplication                 : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-14 18:57:47.130  INFO 6537 --- [restartedMain] com.bguf.BlogApplication                 : The following profiles are active: prod
+2020-10-14 18:57:47.594  INFO 6537 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-14 18:57:47.620  INFO 6537 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 6 JPA repository interfaces.
+2020-10-14 18:57:47.797  INFO 6537 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-14 18:57:47.798  INFO 6537 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-14 18:57:47.799  INFO 6537 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-14 18:57:47.813  INFO 6537 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-14 18:57:47.813  INFO 6537 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 680 ms
+2020-10-14 18:57:47.875  INFO 6537 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 18:57:47.887  INFO 6537 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-14 18:57:47.893  INFO 6537 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-10-14 18:57:48.187  WARN 6537 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-14 18:57:48.503  INFO 6537 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-14 18:57:48.521  INFO 6537 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-10-14 18:57:48.521  INFO 6537 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-14 18:57:48.643  INFO 6537 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-10-14 18:57:48.644  INFO 6537 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-14 18:57:48.767  INFO 6537 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-14 18:57:48.767  INFO 6537 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 18:57:49.128  INFO 6537 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-14 18:57:49.131  INFO 6537 --- [restartedMain] com.bguf.BlogApplication                 : Started BlogApplication in 2.252 seconds (JVM running for 2343.527)
+2020-10-14 18:57:49.133  INFO 6537 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-14 19:02:08.932  INFO 6537 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 19:02:08.934  INFO 6537 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 19:02:08.935  INFO 6537 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-10-14 19:02:08.943  INFO 6537 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-10-14 19:02:14.110  INFO 6810 --- [restartedMain] com.bguf.BlogApplication                 : Starting BlogApplication on bgufs-MacBook-Pro.local with PID 6810 (/Volumes/winFile/codeenvironment/blog/blog/target/classes started by bguf in /Volumes/winFile/codeenvironment/blog/blog)
+2020-10-14 19:02:14.115 DEBUG 6810 --- [restartedMain] com.bguf.BlogApplication                 : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-14 19:02:14.116  INFO 6810 --- [restartedMain] com.bguf.BlogApplication                 : The following profiles are active: prod
+2020-10-14 19:02:14.226  INFO 6810 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-14 19:02:14.227  INFO 6810 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-14 19:02:15.503  INFO 6810 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-14 19:02:15.598  INFO 6810 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84ms. Found 6 JPA repository interfaces.
+2020-10-14 19:02:17.114  INFO 6810 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-14 19:02:17.125  INFO 6810 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-14 19:02:17.125  INFO 6810 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-14 19:02:17.256  INFO 6810 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-14 19:02:17.257  INFO 6810 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3030 ms
+2020-10-14 19:02:17.577  INFO 6810 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 19:02:17.764  INFO 6810 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-14 19:02:17.825  INFO 6810 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-14 19:02:18.065  INFO 6810 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-14 19:02:18.545  INFO 6810 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-14 19:02:20.193  WARN 6810 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-14 19:02:20.614  INFO 6810 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-14 19:02:20.643  INFO 6810 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-10-14 19:02:20.884  INFO 6810 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-14 19:02:21.106  INFO 6810 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-10-14 19:02:21.110  INFO 6810 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-14 19:02:22.072  INFO 6810 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-14 19:02:22.103  INFO 6810 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 19:02:25.506  INFO 6810 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-14 19:02:25.553  INFO 6810 --- [restartedMain] com.bguf.BlogApplication                 : Started BlogApplication in 12.118 seconds (JVM running for 13.666)
+2020-10-14 19:02:39.601  INFO 6810 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-14 19:02:39.601  INFO 6810 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-14 19:02:39.611  INFO 6810 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-10-14 19:02:39.652  INFO 6810 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,index', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2020-10-14 19:02:41.043  WARN 6810 --- [http-nio-8081-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogList.size]; use collection function syntax instead [size(t.blogList)].
+2020-10-14 19:02:42.428  WARN 6810 --- [http-nio-8081-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-14 19:02:44.423  INFO 6810 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : result:index
+2020-10-14 19:02:48.490  INFO 6810 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@71f10e94, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@71f10e94]}
+2020-10-14 19:02:50.051  INFO 6810 --- [http-nio-8081-exec-8] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 19:02:50.355  INFO 6810 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/blog/40', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,blog', args=[40, {}]}
+2020-10-14 19:02:51.557  INFO 6810 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : result:blogs
+2020-10-14 19:02:51.769  INFO 6810 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@4d2f38c4, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@4d2f38c4]}
+2020-10-14 19:02:52.991  INFO 6810 --- [http-nio-8081-exec-2] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/comments/40', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.CommentController,commentlist', args=[40, {}, org.apache.catalina.session.StandardSessionFacade@65fe6838]}
+2020-10-14 19:02:53.089  INFO 6810 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 19:02:53.249  INFO 6810 --- [http-nio-8081-exec-2] com.bguf.aspect.LogAspect                : result:blogs :: commentlist
+2020-10-14 19:04:05.967  INFO 6810 --- [http-nio-8081-exec-7] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/blog/40', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,blog', args=[40, {}]}
+2020-10-14 19:04:08.092  INFO 6810 --- [http-nio-8081-exec-7] com.bguf.aspect.LogAspect                : result:blogs
+2020-10-14 19:04:08.474  INFO 6810 --- [http-nio-8081-exec-4] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@24528407, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@24528407]}
+2020-10-14 19:04:09.482  INFO 6810 --- [http-nio-8081-exec-4] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 19:04:09.665  INFO 6810 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/comments/40', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.CommentController,commentlist', args=[40, {}, org.apache.catalina.session.StandardSessionFacade@65fe6838]}
+2020-10-14 19:04:09.847  INFO 6810 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : result:blogs :: commentlist
+2020-10-14 19:05:37.038  INFO 6810 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/blog/40', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,blog', args=[40, {}]}
+2020-10-14 19:05:38.183  INFO 6810 --- [http-nio-8081-exec-1] com.bguf.aspect.LogAspect                : result:blogs
+2020-10-14 19:05:38.478  INFO 6810 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@74efcdb3, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@74efcdb3]}
+2020-10-14 19:05:39.597  INFO 6810 --- [http-nio-8081-exec-9] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 19:05:39.829  INFO 6810 --- [http-nio-8081-exec-5] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/comments/40', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.CommentController,commentlist', args=[40, {}, org.apache.catalina.session.StandardSessionFacade@65fe6838]}
+2020-10-14 19:05:40.352  INFO 6810 --- [http-nio-8081-exec-5] com.bguf.aspect.LogAspect                : result:blogs :: commentlist
+2020-10-14 19:08:25.426  INFO 6810 --- [http-nio-8081-exec-7] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/blog/37', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,blog', args=[37, {}]}
+2020-10-14 19:08:28.997  INFO 6810 --- [http-nio-8081-exec-7] com.bguf.aspect.LogAspect                : result:blogs
+2020-10-14 19:08:29.206  INFO 6810 --- [http-nio-8081-exec-4] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/footer/newblog', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.IndexController,newBlogs', args=[{blog=com.bguf.entity.Blog@a2f77d, org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.bguf.entity.Blog@a2f77d]}
+2020-10-14 19:08:29.597  INFO 6810 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : request:{url='http://localhost:8081/comments/37', ip='0:0:0:0:0:0:0:1', methodName='com.bguf.controller.CommentController,commentlist', args=[37, {}, org.apache.catalina.session.StandardSessionFacade@65fe6838]}
+2020-10-14 19:08:29.846  INFO 6810 --- [http-nio-8081-exec-10] com.bguf.aspect.LogAspect                : result:blogs :: commentlist
+2020-10-14 19:08:30.117  INFO 6810 --- [http-nio-8081-exec-4] com.bguf.aspect.LogAspect                : result:_fragments :: newblogslist
+2020-10-14 19:16:03.431  INFO 6810 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-14 19:16:03.435  INFO 6810 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 19:16:03.437  INFO 6810 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-14 19:16:03.446  INFO 6810 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

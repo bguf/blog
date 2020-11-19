@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <title>博客后台</title>
+</head>
+<body>
+    <div class="bg">
+        <!--导航-->
+        <nav th:replace="admin/_fragments :: nav(1)"></nav>
+
+        <!--二级导航-->
+        <div th:replace="admin/_fragments :: secondaryNav(6)"></div>
+
+        <!--中间内容-->
+        <div class="mycontainer" style="padding-top: 4em; padding-bottom: 15.89em;">
+            <div class="ui container">
+                <div class="ui segment secondary form stackable">
+                    <input type="hidden" name="page"></input>
+
+                    <div class="inline fields">
+                        <div class="field">
+                            <input type="text" name="title" placeholder="标题">
+                        </div>
+                        <div class="field">
+                            <div class="ui labeled action input">
+                                <div class="ui selection dropdown">
+                                    <input type="hidden" name="typeId">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">分类</div>
+                                    <div class="menu">
+                                        <div th:each="type:${types}" th:data-value="${type.id}" th:text="${type.name}"  class="item"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="ui compact button" id="clear">clear</button>
+
+                        </div>
+                        <div class="field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" id="recommend" name="recommend">
+                                <label for="recommend">推荐</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <button id="searchbtn" class="ui teal basic button mobile-margin">
+                                <i class="search icon"></i>搜索
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="table-content">
+                    <table th:fragment="bloglist" class="ui compact teal table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>标题</th>
+                                <th>类型</th>
+                                <th>推荐</th>
+                                <th>草稿/发布</th>
+                                <th>更新时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr th:each="blog, iterStat : ${page.content}">
+                                <th th:text="${iterStat.count}"></th>
+                                <th th:text="${blog.title}"></th>
+                                <th th:text="${blog.type.name}"></th>
+                                <th th:text="${blog.recommend ? '是' : '否'}"></th>
+                                <th th:text="${blog.published ? '发布' : '草稿'}"></th>
+                                <th th:text="${blog.updateTime}">更新时间</th>
+                                <td>
+                                    <a th:href="@{/admin/blogs/toEdit/{id}(id=${blog.id})}" class="ui teal basic button">编辑</a>
+                                    <a th:href="@{/admin/blogs/delete/{id}(id=${blog.id})}" class="ui red basic button">删除</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <th colspan="7">
+                                <div class="ui pagination menu" th:if="${page.totalPages > 1}">
+                                    <a onclick="page(this)" th:attr="data-page=${page.number} - 1" th:unless="${page.first}" class="mini item">上一页</a>
+                                    <label class="mini item" style="color: grey">当前第 [[${page.getNumber()} + 1]] 页</label>
+                                    <label class="mini item" style="color: grey">共 [[${page.totalPages}]] 页</label>
+                                    <a onclick="page(this)" th:attr="data-page=${page.number} + 1" th:unless="${page.last}" class="mini item">下一页</a>
+                                </div>
+                                <a th:href="@{/admin/blogs/toadd}" class="ui green basic right floated button">新增</a>
+                            </th>
+                        </tr>
+                        </tfoot>
+                    </table>
+                    <div class="ui negative message" th:if="${flag}=='fail'">
+                        <i class="close icon"></i>
+                        <div class="header">提示：</div>
+                        <p th:text="${msgf}"></p>
+                    </div>
+                    <div class="ui success message" th:if="${flag}=='success'">
+                        <i class="close icon"></i>
+                        <div class="header">提示：</div>
+                        <p th:text="${msgs}"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <!--底部footer-->
+        <footer th:replace="admin/_fragments :: footer"></footer>
+    </div>
+
+    <th:block th:replace="admin/_fragments :: script"></th:block>
+    <script th:src="@{/js/adminBlogs.js}"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: head(~{::title})">
+    <title>关于我</title>
+</head>
+<body>
+    <!--导航-->
+    <nav th:replace="_fragments :: menu(5)"></nav>
+
+    <!--中间内容-->
+    <div class="padded-huge mycontainer">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <div class="eleven wide column">
+                    <img src="http://unsplash.it/800/600?image=1005" alt="" class="ui rounded image">
+                </div>
+                <div class="five wide column">
+                    <div class="ui attached top segment">
+                        <div class="ui header">关于我</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <p class="text-thin text-spaced text-lined">自从厌倦于追寻，我已学会一觅即中；自从一股逆风袭来，我已能抵御八面来风，驾舟而行</p>
+                        <p class="text-lined text-spaced text-thin">已有的事，后必再有，已行的事，后必再行</p>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui orange basic label">编程</div>
+                        <div class="ui orange basic label">读书</div>
+                        <div class="ui orange basic label">听歌</div>
+                        <div class="ui orange basic label">运动</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui teal basic label margin-tiny text-thin">java</div>
+                        <div class="ui teal basic label margin-tiny text-thin">spring</div>
+                        <div class="ui teal basic label margin-tiny text-thin">mybatis</div>
+                        <div class="ui teal basic label margin-tiny text-thin">springboot</div>
+                        <div class="ui teal basic label margin-tiny text-thin">mysql</div>
+                    </div>
+                    <div class="ui bottom attached segment">
+                        <a class="ui circular icon button" href="javascript:;">
+                            <i class="github icon"></i>
+                        </a>
+                        <div class="ui circular icon button">
+                            <i class="wechat icon"></i>
+                        </div>
+                        <div class="ui circular qq icon button">
+                            <i class="qq icon"></i>
+                        </div>
+                        <div class="ui qqQR flowing popup transition hidden">
+                            <img th:src="@{images/qq.png}" alt="" class="ui rounded bordered image" style="width: 80px">
+                        </div>
+                        <div class="ui wechatQR flowing popup transition hidden">
+                            <img th:src="@{images/wechat.jpg}" alt="" class="ui rounded bordered image" style="width: 100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <!--底部footer-->
+    <footer th:replace="_fragments :: footer"></footer>
+
+    <th:block th:replace="_fragments :: script"></th:block>
+    <script th:src="@{/js/about.js}"></script>
+</body>
+</html>

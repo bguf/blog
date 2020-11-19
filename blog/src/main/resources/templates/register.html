@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <title>注册</title>
+</head>
+<body>
+<div class="bg">
+    <div class="mycontainer-small" style="max-width: 30em !important;padding-top: 11em;">
+        <div class="ui container">
+            <div class="column">
+                <h2 class="ui teal image header" style="margin-left: 30%;">
+                    <div class="content">
+                        用户注册
+                    </div>
+                </h2>
+                <form class="ui large form" method="post" th:action="@{/register}" enctype="multipart/form-data">
+                    <div class="ui segment">
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="smile outline icon"></i>
+                                <input type="text" name="nickname" th:placeholder="请输入昵称" placeholder="昵称">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input type="password" name="password" th:placeholder="请输入密码" placeholder="密码">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="envelope outline icon"></i>
+                                <input type="text" name="email" th:placeholder="请输入邮箱地址" placeholder="邮箱">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="id badge outline icon"></i>
+                                <input type="file" name="image" th:placeholder="请选择图像">
+                            </div>
+                        </div>
+                        <button class="ui fluid large teal submit button">Register</button>
+                    </div>
+
+                    <div class="ui error message"></div>
+                    <div class="ui negative message" th:if="${msgf != null}">
+                        <i class="close icon"></i>
+                        <div class="header">提示：</div>
+                        <p th:text="${msgf}"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<th:block th:replace="admin/_fragments :: script"></th:block>
+<script th:src="@{/js/register.js}"></script>
+
+</body>
+</html>

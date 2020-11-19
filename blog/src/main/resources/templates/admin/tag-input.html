@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <title>分类新增</title>
+</head>
+<link rel="stylesheet" th:href="@{/css/typo.css}">
+<body>
+    <div class="bg">
+        <!--导航-->
+        <nav th:replace="admin/_fragments :: nav(3)"></nav>
+
+        <!--二级导航-->
+        <div th:replace="admin/_fragments :: secondaryNav(3)"></div>
+
+        <!--中间内容-->
+        <div class="padded-huge mycontainer">
+            <div class="ui container">
+                <form class="ui form" method="post" style="padding-bottom: 17.8em;" th:object="${tag}" th:action="@{/admin/tags/{id}(id=*{id})}">
+                    <div class="field">
+                        <div class="ui left labeled input">
+                            <label class="ui teal basic label">名称</label>
+                            <input type="text" autofocus placeholder="名称" name="name" th:value="*{name}">
+                        </div>
+                    </div>
+                    <div class="ui error message"></div>
+
+                    <div class="ui negative message" th:if="${#fields.hasErrors('name')}">
+                        <i class="close icon"></i>
+                        <div class="header">验证失败</div>
+                        <p th:errors="*{name}"></p>
+                    </div>
+
+                    <div class="ui right aligned container">
+                        <button class="ui button" type="button" onclick="window.history.go(-1)">返回</button>
+                        <button class="ui orange submit button">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <!--底部footer-->
+        <footer th:replace="admin/_fragments :: footer"></footer>
+
+    </div>
+
+    <th:block th:replace="admin/_fragments :: script"></th:block>
+    <script th:src="@{/js/admintypes-tags.js}"></script>
+</body>
+</html>
